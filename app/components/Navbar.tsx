@@ -1,7 +1,9 @@
-import React from 'react'
+'use client';
+import React, { useState } from 'react'
 import { FiPhone } from 'react-icons/fi';
 
 export default function Navbar() {
+    const [activeHash, setActiveHash] = useState('');
     const navItems = [
         { name: 'Home', link: '#home' },
         { name: 'About', link: '#about' },
@@ -20,8 +22,12 @@ export default function Navbar() {
                 <ul className='text-white grid grid-flow-col gap-10 text-base font-normal'>
                     {navItems.map((items) => (
                         <li key={items.name}>
-                            <a href={items.link} >
-                                <h1>{items.name}</h1>
+                            <a
+                                href={items.link}
+                                onClick={() => setActiveHash(items.link)}
+                                className={activeHash === items.link ? 'text-[#FA7A16]' : 'hover:text-[#FA7A16] transition'}
+                                >
+                                {items.name}
                             </a>
                         </li>
                     ))}
