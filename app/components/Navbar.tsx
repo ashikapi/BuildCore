@@ -1,5 +1,6 @@
 'use client';
 import React, { useState } from 'react'
+import { CgMenuGridR } from 'react-icons/cg';
 import { FiPhone } from 'react-icons/fi';
 
 export default function Navbar() {
@@ -11,15 +12,15 @@ export default function Navbar() {
         { name: 'Contact', link: '#contact' },
     ];
     return (
-        <nav className='w-full h-20 bg-[#1A1818] px-20 flex items-center justify-between fixed top-0 z-50 border-b border-b-white/50'>
-            <div className='flex items-center gap-4 cursor-pointer'>
-                <div className='w-10 h-10 bg-gradient-to-r from-[#FA7E16] to-[#FE9619] rounded-md flex items-center justify-center'>
-                    <h1 className='text-white text-2xl font-normal'>B</h1>
+        <nav className='w-full h-20 bg-[#1A1818] md:px-20 flex items-center md:justify-between justify-around fixed top-0 z-50 border-b border-b-white/50'>
+            <div className='flex items-center md:gap-4 gap-1.5 cursor-pointer'>
+                <div className='md:w-10 md:h-10 w-8 h-8 bg-gradient-to-r from-[#FA7E16] to-[#FE9619] rounded-md flex items-center justify-center'>
+                    <h1 className='text-white md:text-2xl text-xl font-normal'>B</h1>
                 </div>
-                <h1 className='text-white text-2xl font-normal uppercase'>BuildCore</h1>
+                <h1 className='text-white md:text-2xl text-xl font-normal uppercase'>BuildCore</h1>
             </div>
             <div>
-                <ul className='text-white grid grid-flow-col gap-10 text-base font-normal'>
+                <ul className='text-white hidden md:grid grid-flow-col gap-10 text-base font-normal'>
                     {navItems.map((items) => (
                         <li key={items.name}>
                             <a
@@ -33,7 +34,7 @@ export default function Navbar() {
                     ))}
                 </ul>
             </div>
-            <div className="flex items-center justify-center gap-4">
+            <div className="md:flex hidden items-center justify-center gap-4">
                 <a
                     href="tel:1234567890"
                     className="flex items-center gap-2 text-[#8F96A3]"
@@ -45,6 +46,9 @@ export default function Navbar() {
                 <button className="rounded-md bg-gradient-to-r from-[#FA7E16] to-[#FE9619] px-4 py-2 text-white font-medium hover:opacity-90 transition cursor-pointer">
                     Get a Quote
                 </button>
+            </div>
+            <div className='text-white md:hidden text-3xl cursor-pointer'>
+                <CgMenuGridR />
             </div>
 
         </nav>
