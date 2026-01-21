@@ -11,7 +11,7 @@ export default function Navbar() {
         { name: 'Contact', link: '#contact' },
     ];
     return (
-        <nav className='w-full h-16 bg-[#1A1818] px-20 flex items-center justify-between fixed top-0 z-50 border-b border-b-white/50'>
+        <nav className='w-full h-20 bg-[#1A1818] px-20 flex items-center justify-between fixed top-0 z-50 border-b border-b-white/50'>
             <div className='flex items-center gap-4'>
                 <div className='w-10 h-10 bg-gradient-to-r from-[#FA7E16] to-[#FE9619] rounded-md flex items-center justify-center'>
                     <h1 className='text-white text-2xl font-normal'>B</h1>
