@@ -12,7 +12,7 @@ export default function Navbar() {
     ];
     return (
         <nav className='w-full h-20 bg-[#1A1818] px-20 flex items-center justify-between fixed top-0 z-50 border-b border-b-white/50'>
-            <div className='flex items-center gap-4'>
+            <div className='flex items-center gap-4 cursor-pointer'>
                 <div className='w-10 h-10 bg-gradient-to-r from-[#FA7E16] to-[#FE9619] rounded-md flex items-center justify-center'>
                     <h1 className='text-white text-2xl font-normal'>B</h1>
                 </div>
@@ -42,7 +42,7 @@ export default function Navbar() {
                     <span>(123) 456-7890</span>
                 </a>
 
-                <button className="rounded-md bg-gradient-to-r from-[#FA7E16] to-[#FE9619] px-4 py-2 text-white font-medium hover:opacity-90 transition">
+                <button className="rounded-md bg-gradient-to-r from-[#FA7E16] to-[#FE9619] px-4 py-2 text-white font-medium hover:opacity-90 transition cursor-pointer">
                     Get a Quote
                 </button>
             </div>

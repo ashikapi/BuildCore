@@ -30,11 +30,11 @@ export default function HomeHero() {
           From concept to completion, we deliver exceptional construction services with uncompromising quality and precision.
         </p>
         <div className="flex justify-center gap-28 items-center mt-14">
-        <button className="text-white px-10 py-3 bg-gradient-to-r from-[#FA7E16] to-[#FE9619] rounded-md text-xl flex items-center gap-2">
+        <button className="text-white px-10 py-3 bg-gradient-to-r from-[#FA7E16] to-[#FE9619] rounded-md text-xl flex items-center gap-2 cursor-pointer">
           Start Your Project 
           <span> <FaArrowRight /></span>
           </button>
-        <button className="text-[#FA7A16] px-10 py-3 border-2 border-[#FA7A16] rounded-md text-xl flex items-center gap-2">
+        <button className="text-[#FA7A16] px-10 py-3 border-2 border-[#FA7A16] rounded-md text-xl flex items-center gap-2 cursor-pointer">
           <span><IoPlayOutline /></span>
           Watch Our Story
         </button>
