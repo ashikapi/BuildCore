@@ -1,9 +1,16 @@
 import React from 'react'
-import Navbar from './components/Navbar'
+import HomeHero from './home/page'
+import States from './components/States'
 
 export default function page() {
   return (
-    <div></div>
+   <>
+   
+   <section id="home" className="pt-16">
+        <HomeHero />
+      </section>
+      <States/>
+   </>
     
   )
 }
