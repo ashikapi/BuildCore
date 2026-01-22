@@ -56,7 +56,7 @@ export default function Services() {
       </div>
       <div className='grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-10 gap-5'>
         {serviceDetails.map((service, index) => (
-          <div key={index} className='md:w-[386px] md:h-[260px] w-full h-full rounded-[7px] md:p-6 p-4 bg-[#1A1D23] flex flex-col md:gap-4 gap-2'>
+          <div key={index} className='md:w-[386px] md:h-[260px] w-full h-52 rounded-[7px] p-6 bg-[#1A1D23] flex flex-col md:gap-4 gap-2'>
             <div className='md:w-14 md:h-14 w-8 h-8 rounded bg-gradient-to-r from-[#FA7E16] to-[#FE9619] items-center justify-center flex md:text-2xl text-base'>
               <h1 className='text-[#FAFAFA]'>{service.icon}</h1>
             </div>
