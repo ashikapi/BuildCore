@@ -1,6 +1,7 @@
 import React from 'react'
 import HomeHero from './home/page'
 import States from './components/States'
+import Services from './services/page'
 
 export default function page() {
   return (
@@ -10,6 +11,9 @@ export default function page() {
         <HomeHero />
       </section>
       <States/>
+    <section id="services" className="">
+      <Services />
+    </section>
    </>
     
   )

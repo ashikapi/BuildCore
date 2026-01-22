@@ -7,8 +7,8 @@ export default function Navbar() {
     const [activeHash, setActiveHash] = useState('');
     const navItems = [
         { name: 'Home', link: '#home' },
-        { name: 'About', link: '#about' },
         { name: 'Services', link: '#services' },
+        { name: 'About', link: '#about' }, 
         { name: 'Contact', link: '#contact' },
     ];
     return (
