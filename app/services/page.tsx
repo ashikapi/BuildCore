@@ -43,7 +43,7 @@ export default function Services() {
   ];
   return (
     <div className='w-full h-full flex-1 justify-center items-center bg-[#272C35] md:px-20 px-4 md:py-20 py-6'>
-      <div className='text-center md:space-y-5 space-y-4'>
+      <div className='text-center md:space-y-5 space-y-4 mt-4'>
         <h3 className='text-[#FA7A16] md:text-base text-sm font-semibold'>WHAT WE DO</h3>
         <h1 className='text-[#FAFAFA] md:text-6xl text-2xl font-normal text-balance'>OUR SERVICES</h1>
         <p
