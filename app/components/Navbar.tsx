@@ -8,6 +8,7 @@ export default function Navbar() {
     const navItems = [
         { name: 'Home', link: '#home' },
         { name: 'Services', link: '#services' },
+        { name: 'Projects', link: '#projects' },
         { name: 'About', link: '#about' }, 
         { name: 'Contact', link: '#contact' },
     ];
@@ -20,7 +21,7 @@ export default function Navbar() {
                 <h1 className='text-white md:text-2xl text-xl font-normal uppercase'>BuildCore</h1>
             </div>
             <div>
-                <ul className='text-white hidden md:grid grid-flow-col gap-10 text-base font-normal'>
+                <ul className='text-[#8F96A3] hidden md:grid grid-flow-col gap-10 text-base font-normal'>
                     {navItems.map((items) => (
                         <li key={items.name}>
                             <a
