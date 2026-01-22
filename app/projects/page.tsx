@@ -3,7 +3,6 @@ import { FaArrowRightLong } from 'react-icons/fa6'
 import project1 from '@/public/images/project image/project1.png';
 import project2 from '@/public/images/project image/project2.png';
 import project3 from '@/public/images/project image/project3.png';
-import { Divide } from 'lucide-react';
 
 export default function Projects() {
     const projectDetails = [
