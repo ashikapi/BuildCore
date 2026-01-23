@@ -42,7 +42,7 @@ export default function Services() {
     },
   ];
   return (
-    <div className='w-full h-full flex-1 justify-center items-center bg-[#272C35] md:px-20 px-4 md:py-20 py-6'>
+    <div className='w-full h-full flex-1 justify-center items-center bg-[#272C35] md:px-20 px-6 md:py-20 py-6'>
       <div className='text-center md:space-y-5 space-y-4 mt-4'>
         <h3 className='text-[#FA7A16] md:text-base text-sm font-semibold'>WHAT WE DO</h3>
         <h1 className='text-[#FAFAFA] md:text-6xl text-2xl font-normal text-balance'>OUR SERVICES</h1>
@@ -57,8 +57,8 @@ export default function Services() {
       <div className='grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-10 gap-5'>
         {serviceDetails.map((service, index) => (
           <div key={index} className='md:w-[386px] md:h-[260px] w-full h-52 rounded-[7px] p-6 bg-[#1A1D23] flex flex-col md:gap-4 gap-2'>
-            <div className='md:w-14 md:h-14 w-8 h-8 rounded bg-gradient-to-r from-[#FA7E16] to-[#FE9619] items-center justify-center flex md:text-2xl text-base'>
-              <h1 className='text-[#FAFAFA]'>{service.icon}</h1>
+            <div className='md:w-14 md:h-14 w-10 h-10 rounded bg-gradient-to-r from-[#FA7E16] to-[#FE9619] items-center justify-center flex md:text-2xl text-base'>
+              <h1 className='text-[#FAFAFA] text-2xl'>{service.icon}</h1>
             </div>
             <h2 className='text-[#FAFAFA] md:text-2xl text-lg font-normal'>{service.title}</h2>
             <p className='text-[#8F96A3] md:text-base text-sm font-normal'>{service.description}</p>
