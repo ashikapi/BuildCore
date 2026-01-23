@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react'
-import { CgMenuGridR } from 'react-icons/cg';
 import { FiPhone } from 'react-icons/fi';
+import NavbarMD from './NavbarMD';
 
 export default function Navbar() {
     const [activeHash, setActiveHash] = useState('');
@@ -9,7 +9,7 @@ export default function Navbar() {
         { name: 'Home', link: '#home' },
         { name: 'Services', link: '#services' },
         { name: 'Projects', link: '#projects' },
-        { name: 'About', link: '#about' }, 
+        { name: 'About', link: '#about' },
         { name: 'Contact', link: '#contact' },
     ];
     return (
@@ -28,7 +28,7 @@ export default function Navbar() {
                                 href={items.link}
                                 onClick={() => setActiveHash(items.link)}
                                 className={activeHash === items.link ? 'text-[#FA7A16]' : 'hover:text-[#FA7A16] transition'}
-                                >
+                            >
                                 {items.name}
                             </a>
                         </li>
@@ -49,7 +49,10 @@ export default function Navbar() {
                 </button>
             </div>
             <div className='text-white md:hidden text-3xl cursor-pointer'>
-                <CgMenuGridR />
+                <NavbarMD
+                    activeHash={activeHash}
+                    setActiveHash={setActiveHash}
+                />
             </div>
 
         </nav>

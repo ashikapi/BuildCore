@@ -9,7 +9,7 @@ import { FaArrowRight } from "react-icons/fa";
 export default function HomeHero() {
   return (
     <div
-      className="relative flex-1 justify-center items-center w-full h-full bg-cover bg-center bg-no-repeat md:px-20 px-4 md:py-10 py-6"
+      className="relative flex-1 justify-center items-center w-full h-full bg-cover bg-center bg-no-repeat md:px-20 px-6 md:py-10 py-6"
       style={{ backgroundImage: `url(${bg.src})` }}
     >
     <div className="absolute top-12 left-1/2 transform -translate-x-1/2 flex items-center gap-2 px-4 py-2 bg-[#542E18] border border-[#FA7A16] rounded-full">
