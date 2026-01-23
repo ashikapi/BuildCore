@@ -4,6 +4,7 @@ import States from './components/States'
 import Services from './services/page'
 import Projects from './projects/page'
 import AboutUs from './about/page'
+import ContactUs from './contact/page'
 
 export default function page() {
   return (
@@ -21,6 +22,9 @@ export default function page() {
     </section>
     <section id='about' className='md:scroll-mt-8 scroll-mt-20'>
       <AboutUs />
+    </section>
+    <section id='contact' className='md:scroll-mt-8 scroll-mt-20'>
+      <ContactUs />
     </section>
    </>
     
