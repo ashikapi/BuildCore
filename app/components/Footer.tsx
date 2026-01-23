@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="w-full bg-[#1a1d23] text-white md:px-20 px-4 ">
+    <footer className="w-full bg-[#1a1d23] text-white md:px-20 px-6 ">
       {/* Top Section */}
       <div className="w-full py-14 mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
         
@@ -13,12 +13,12 @@ const Footer: React.FC = () => {
         <div className="space-y-4">
           <div className="flex items-center gap-3 cursor-pointer">
             <div className="w-10 h-10 bg-gradient-to-r from-[#FA7E16] to-[#FE9619] rounded-md flex items-center justify-center">
-              <span className="text-white text-2xl font-medium">B</span>
+              <span className="text-white md:text-2xl text-xl font-normal">B</span>
             </div>
-            <h1 className="text-2xl font-medium uppercase">BuildCore</h1>
+            <h1 className="md:text-2xl text-xl font-medium uppercase">BuildCore</h1>
           </div>
 
-          <p className="text-[#8F96A3] text-base leading-relaxed">
+          <p className="text-[#8F96A3] md:text-base text-sm leading-relaxed">
             Building tomorrow&apos;s landmarks today. <br />
             Your trusted partner in construction excellence since 1999.
           </p>
@@ -26,10 +26,10 @@ const Footer: React.FC = () => {
 
         {/* Quick Links */}
         <div>
-          <h2 className="text-xl font-semibold tracking-wider mb-4 uppercase">
+          <h2 className="md:text-xl text-lg font-normal tracking-wider mb-4 uppercase">
             Quick Links
           </h2>
-          <ul className="space-y-2 text-[#8F96A3] text-base">
+          <ul className="space-y-2 text-[#8F96A3] md:text-base text-sm">
             <li><Link href="/">Home</Link></li>
             <li><Link href="/about">About Us</Link></li>
             <li><Link href="/services">Services</Link></li>
@@ -40,10 +40,10 @@ const Footer: React.FC = () => {
 
         {/* Services */}
         <div>
-          <h2 className="text-xl font-semibold tracking-wider mb-4 uppercase">
+          <h2 className="md:text-xl text-lg font-normal tracking-wider mb-4 uppercase">
             Services
           </h2>
-          <ul className="space-y-2 text-[#8F96A3] text-base">
+          <ul className="space-y-2 text-[#8F96A3] md:text-base text-sm">
             <li>Commercial Construction</li>
             <li>Residential Projects</li>
             <li>Industrial Facilities</li>
@@ -54,10 +54,10 @@ const Footer: React.FC = () => {
 
         {/* Newsletter */}
         <div>
-          <h2 className="text-xl font-semibold tracking-wider mb-4 uppercase">
+          <h2 className="md:text-xl text-lg font-normal tracking-wider mb-4 uppercase">
             Newsletter
           </h2>
-          <p className="text-[#8F96A3] text-base mb-4">
+          <p className="text-[#8F96A3] md:text-base text-sm mb-4">
             Subscribe to get updates on our latest projects and industry insights.
           </p>
 
