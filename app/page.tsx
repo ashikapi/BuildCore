@@ -12,10 +12,10 @@ export default function page() {
         <HomeHero />
       </section>
       <States/>
-    <section id="services" className="">
+    <section id="services" className="md:scroll-mt-0 scroll-mt-16">
       <Services />
     </section>
-    <section id="projects" className="">
+    <section id="projects" className="md:scroll-mt-0 scroll-mt-20">
       <Projects />
     </section>
    </>
