@@ -81,24 +81,26 @@ const Footer: React.FC = () => {
   </div>
 
   <div className="text-center md:text-end">
-    UI/UX Design:{" "}
-    <a
-      href="https://mdmahfuz.netlify.app/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-[#FA7E16] hover:underline"
-    >
-      Mahfuzur Rahman
-    </a>{" "}
-    (Figma) · Frontend Development:{" "}
-    <a
+    Frontend Development:{" "}
+ <a
       href="https://ashikapi.netlify.app/"
       target="_blank"
       rel="noopener noreferrer"
       className="text-[#FA7E16] hover:underline"
     >
       Ashik API
+    </a>{" "} |
+    UI/UX Design:{" "} 
+        <a
+      href="https://mdmahfuz.netlify.app/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-[#FA7E16] hover:underline"
+    >
+      Mahfuzur Rahman
     </a>
+   
+    (Figma). 
   </div>
 </div>
 
