@@ -10,12 +10,12 @@ const Footer: React.FC = () => {
         
         {/* Logo & Description */}
         <div className="space-y-4">
-          <div className="flex items-center gap-3 cursor-pointer">
+          <a className="flex items-center gap-3 cursor-pointer" href="#home">
             <div className="w-10 h-10 bg-gradient-to-r from-[#FA7E16] to-[#FE9619] rounded-md flex items-center justify-center">
               <span className="text-white md:text-2xl text-xl font-normal">B</span>
             </div>
             <h1 className="md:text-2xl text-xl font-medium uppercase">BuildCore</h1>
-          </div>
+          </a>
 
           <p className="text-[#8F96A3] md:text-base text-sm leading-relaxed">
             Building tomorrow&apos;s landmarks today. <br />
