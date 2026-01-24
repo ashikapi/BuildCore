@@ -26,15 +26,15 @@ const InfoCard = ({ title, text, icon }: InfoCardProps) => {
           flex items-center justify-center
         "
       >
-        <span className="text-white md:text-2xl text-base">{icon}</span>
+        <span className="text-[#FAFAFA] md:text-2xl text-base">{icon}</span>
       </div>
 
       {/* Text */}
       <div className="flex-1">
-        <h2 className="text-[#FA7A16] md:text-2xl text-xl font-medium">
+        <h2 className="text-[#FAFAFA] md:text-xl text-lg font-normal">
           {title}
         </h2>
-        <p className="mt-1 text-gray-400 md:text-base text-sm">{text}</p>
+        <p className="mt-1 text-[#8F96A3] font-normal md:text-base text-sm">{text}</p>
       </div>
     </div>
   );
