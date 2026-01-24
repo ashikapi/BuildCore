@@ -6,7 +6,7 @@ import { LuMailOpen } from 'react-icons/lu';
 
 export default function ContactUs() {
     return (
-        <div className='w-full h-full md:py-10  py-6 flex-1 justify-center items-center bg-[#111317]'>
+        <div className='w-full h-full md:py-16  py-6 flex-1 justify-center items-center bg-[#111317]'>
             <div className='text-center space-y-5 md:px-20 px-6'>
                 <h3 className='text-[#FA7A16] text-base font-semibold'>GET IN TOUCH</h3>
                 <h1 className='max-w-3xl mx-auto md:text-6xl text-2xl font-normal text-[#FAFAFA]'>START YOUR PROJECT TODAY</h1>
