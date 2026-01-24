@@ -43,9 +43,9 @@ export default function ContactUs() {
                    
                 </div>
                  <div className="space-y-6 md:px-0 px-6 mt-10 md:mt-0">
-                    <InfoCard title="Visit Us" text="123 Construction Avenue New York, NY 10001" icon={<IoLocationOutline />} />
-                    <InfoCard title="Call Us" text="(123) 456-7890 (123) 456-7891" icon={<MdOutlineCall />} />
-                    <InfoCard title="Email Us" text="info@buildcore.com projects@buildcore.com" icon={<LuMailOpen />} />
+                    <InfoCard title="Visit Us" text={<>123 Construction Avenue <br /> New York, NY 10001</>} icon={<IoLocationOutline />} />
+                    <InfoCard title="Call Us" text={<>(123) 456-7890 <br /> (123) 456-7891</>} icon={<MdOutlineCall />} />
+                    <InfoCard title="Email Us" text={<>info@buildcore.com <br />projects@buildcore.com</>} icon={<LuMailOpen />} />
                 </div>
                 </div>
 

@@ -1,6 +1,6 @@
 type InfoCardProps = {
   title: string;
-  text: string;
+  text: React.ReactNode;
   icon: React.ReactNode;
 };
 
@@ -8,7 +8,7 @@ const InfoCard = ({ title, text, icon }: InfoCardProps) => {
   return (
     <div
       className="
-        md:w-[547px] md:h-[106px] w-full min-h-[106px]
+        md:w-[547px] md:h-[120px] w-full min-h-[106px]
         px-6 md:px-10 py-4
         flex items-start gap-5
         bg-[linear-gradient(270deg,#111317_0%,#1B1E24_80.77%)]
