@@ -1,7 +1,9 @@
-import React from "react";
+'use client';
+import React, { useState } from "react";
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
+
 
   return (
     <footer className="w-full bg-[#1a1d23] text-white md:px-20 px-6 ">

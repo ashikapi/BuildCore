@@ -1,3 +1,23 @@
+// useEffect(() => {
+//   const handleScroll = () => {
+//     navItems.forEach(item => {
+//       const section = document.querySelector(item.link);
+//       if (section) {
+//         const top = section.offsetTop - 100;
+//         const height = section.offsetHeight;
+//         if (window.scrollY >= top && window.scrollY < top + height) {
+//           setActiveHash(item.link);
+//         }
+//       }
+//     });
+//   };
+
+//   window.addEventListener('scroll', handleScroll);
+//   return () => window.removeEventListener('scroll', handleScroll);
+// }, []);
+
+
+
 'use client';
 import React, { useState } from 'react'
 import { FiPhone } from 'react-icons/fi';
@@ -14,12 +34,13 @@ export default function Navbar() {
     ];
     return (
         <nav className='w-full h-20 bg-[#1A1818] xl:px-20 md:px-10 flex items-center md:justify-between justify-around fixed top-0 z-50 border-b border-b-white/50'>
-            <div className='flex items-center md:gap-4 gap-1.5 cursor-pointer'>
+            <a className='flex items-center md:gap-4 gap-1.5 cursor-pointer' href='#home'
+            onClick={() => setActiveHash('#home')}>
                 <div className='md:w-10 md:h-10 w-8 h-8 bg-gradient-to-r from-[#FA7E16] to-[#FE9619] rounded-md flex items-center justify-center'>
                     <h1 className='text-white md:text-2xl text-xl font-normal'>B</h1>
                 </div>
                 <h1 className='text-white md:text-2xl text-xl font-normal uppercase'>BuildCore</h1>
-            </div>
+            </a>
             <div>
                 <ul className='text-[#8F96A3] hidden md:grid grid-flow-col xl:gap-10 md:gap-5 text-base font-normal'>
                     {navItems.map((items) => (
